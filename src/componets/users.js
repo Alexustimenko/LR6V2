@@ -6,7 +6,6 @@ export async function renderUsers(root) {
   const wrap = el("div", { className: "card" });
   wrap.appendChild(el("h2", { style: "margin:0 0 8px" }, "Пользователи"));
 
-  // toolbar: поиск + форма создания
   const search = el("input", { type: "text", placeholder: "Поиск по имени или email…" });
 
   const form = el("form", { className: "inline", on: { submit: onCreate } }, [
@@ -36,7 +35,6 @@ export async function renderUsers(root) {
 
   render(users);
 
-  // поиск с дебаунсом
   search.addEventListener(
     "input",
     debounce(() => {
