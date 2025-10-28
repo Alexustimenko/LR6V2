@@ -1,8 +1,8 @@
-import { renderUsers } from "../componets/users";
-import { renderTodos } from "../componets/todos";
-import { renderPosts } from "../componets/posts";
-import { renderComments } from "../componets/comments";
-import { renderBreadcrumbs } from "../componets/breadcrumps";
+import { renderUsers } from "../components/users";
+import { renderTodos } from "../components/todos";
+import { renderPosts } from "../components/posts";
+import { renderComments } from "../components/comments";
+import { renderBreadcrumbs } from "../components/breadcrumps";
 import { clear } from "./dom.js";
 
 const ROUTES = {
