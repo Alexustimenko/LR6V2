@@ -1,8 +1,8 @@
-import { renderUsers } from "../components/users.js";
-import { renderTodos } from "../components/todos.js";
-import { renderPosts } from "../components/posts.js";
-import { renderComments } from "../components/comments.js";
-import { renderBreadcrumbs } from "../components/breadcrumbs.js";
+import { renderUsers } from "../componets/users";
+import { renderTodos } from "../componets/todos";
+import { renderPosts } from "../componets/posts";
+import { renderComments } from "../componets/comments";
+import { renderBreadcrumbs } from "../componets/breadcrumps";
 import { clear } from "./dom.js";
 
 const ROUTES = {
@@ -11,6 +11,7 @@ const ROUTES = {
     "#users#posts": renderPosts,
     "#users#posts#comments": renderComments
 };
+
 
 export function initRouter(pageRoot, bcRoot) {
     const go = () => {
