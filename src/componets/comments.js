@@ -44,6 +44,7 @@ export async function renderComments(root) {
             list.appendChild(el("div", { className: "muted" }, "Ничего не найдено"));
             return;
         }
+
         data.forEach(c => list.appendChild(commentCard(c)));
     }
 

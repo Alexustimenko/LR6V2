@@ -12,6 +12,7 @@ const ROUTES = {
     "#users#posts#comments": renderComments
 };
 
+
 export function initRouter(pageRoot, bcRoot) {
     const go = () => {
         const hash = location.hash || "#users";
